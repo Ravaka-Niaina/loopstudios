@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"scss/styles.scss"
+	],
+	"sourcesContent": [
+		"$bg-color: black;\n\nbody {\n  background-color: $bg-color;\n  color: white;\n}\n\n.attribution {\n  font-size: 11px;\n  text-align: center;\n}\n.attribution a {\n  color: hsl(228, 45%, 44%);\n}\n"
+	],
+	"names": [],
+	"mappings": ";AAEA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAHP,KAAK;EAId,KAAK,EAAE,KAAK;CACb;;;AAED,AAAA,YAAY,CAAC;EACX,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;CACnB;;;AACD,AAAA,YAAY,CAAC,CAAC,CAAC;EACb,KAAK,EAAE,OAAkB;CAC1B"
+}
