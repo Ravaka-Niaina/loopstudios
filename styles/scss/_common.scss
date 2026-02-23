@@ -4,9 +4,20 @@ $grey-200: hsl(0, 0%, 85%);
 
 $padding: 15px;
 $xs-padding: 48px;
+
 $h1Size: 46px;
 $md-h1Size: 60px;
-$fontSize: 15px;
+
+$h2Size: 30px;
+$md-h2Size: 60px;
+
+$fontSize: 17px;
+$xs-fontSize: 23px;
+$md-fontSize: 32px;
+
+$paragraphLineHeight: 30px;
+$xs-paragraphLineHeight: 40px;
+$md-paragraphLineHeight: 50px;
 
 @font-face {
   font-family: "Alata";

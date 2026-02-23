@@ -256,22 +256,89 @@
   }
 }
 
-/* line 6, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/styles.scss */
+/* line 1, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+.interactive {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin-top: 100px;
+}
+
+/* line 8, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+.interactive__picture > img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 13, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+.interactive__details {
+  color: black;
+  text-align: center;
+}
+
+/* line 18, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+.interactive__heading {
+  font-family: "JosefinSans";
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/* line 25, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+.interactive__paragraph {
+  font-family: "Alata";
+  font-weight: 400;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 17px;
+  line-height: 30px;
+  color: #7a7a7a;
+}
+
+@media (min-width: 480px) {
+  /* line 36, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+  .interactive {
+    margin-top: 150px;
+    padding: 0 48px;
+  }
+  /* line 41, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+  .interactive__paragraph {
+    padding-left: 48px;
+    padding-right: 48px;
+    font-size: 23px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 53, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+  .interactive__heading {
+    font-size: 60px;
+  }
+  /* line 56, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+  .interactive__paragraph {
+    margin-top: 0;
+    font-size: 32px;
+    line-height: 50px;
+  }
+}
+
+/* line 7, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/styles.scss */
 body {
-  background-color: black;
+  background-color: white;
   margin: 0;
   min-height: 100px;
   width: 100vw;
   box-sizing: border-box;
 }
 
-/* line 14, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/styles.scss */
+/* line 15, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/styles.scss */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 
-/* line 18, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/styles.scss */
+/* line 19, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/styles.scss */
 .attribution a {
   color: #3e52a3;
 }

@@ -1,7 +1,8 @@
 @import "common";
 @import "header";
+@import "interactive";
 
-$bg-color: black;
+$bg-color: $white;
 
 body {
   background-color: $bg-color;

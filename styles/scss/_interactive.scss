@@ -1,0 +1,64 @@
+.interactive {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0 $padding;
+  margin-top: 100px;
+}
+
+.interactive__picture > img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.interactive__details {
+  color: $black;
+  text-align: center;
+}
+
+.interactive__heading {
+  font-family: "JosefinSans";
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: $h2Size;
+}
+
+.interactive__paragraph {
+  font-family: "Alata";
+  font-weight: 400;
+  padding-left: $padding;
+  padding-right: $padding;
+  font-size: $fontSize;
+  line-height: $paragraphLineHeight;
+  color: #7a7a7a;
+}
+
+@media (min-width: 480px) {
+  .interactive {
+    margin-top: 150px;
+    padding: 0 $xs-padding;
+  }
+
+  .interactive__paragraph {
+    padding-left: $xs-padding;
+    padding-right: $xs-padding;
+    font-size: $xs-fontSize;
+    line-height: $xs-paragraphLineHeight;
+  }
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+  .interactive__heading {
+    font-size: $md-h2Size;
+  }
+  .interactive__paragraph {
+    margin-top: 0;
+    font-size: $md-fontSize;
+    line-height: $md-paragraphLineHeight;
+  }
+}
+
+@media (min-width: 1024px) {
+}
