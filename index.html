@@ -37,6 +37,7 @@
           />
         </a>
 
+        <div></div>
         <!-- Hamburger Button -->
         <button
           class="header__menu-toggle"
@@ -51,13 +52,20 @@
         </button>
 
         <!-- Menu -->
-        <ul class="header__menu-list">
-          <li class="header__menu-item"><a href="#">About</a></li>
-          <li class="header__menu-item"><a href="#">Careers</a></li>
-          <li class="header__menu-item"><a href="#">Events</a></li>
-          <li class="header__menu-item"><a href="#">Products</a></li>
-          <li class="header__menu-item"><a href="#">Support</a></li>
-        </ul>
+        <div class="container-menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a href="#">About</a></li>
+            <li class="header__menu-item"><a href="#">Careers</a></li>
+            <li class="header__menu-item"><a href="#">Events</a></li>
+            <li class="header__menu-item"><a href="#">Products</a></li>
+            <li class="header__menu-item"><a href="#">Support</a></li>
+          </ul>
+
+          <div class="header__close">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
       </nav>
 
       <!-- Hero Heading -->
@@ -275,5 +283,21 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Ravaka Niaina Ratefiarivony</a>.
     </div>
+
+    <script>
+      const menuToggle = document.querySelector(".header__menu-toggle");
+      const containerMenu = document.querySelector(".container-menu");
+      const headerClose = document.querySelector(".header__close");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.add("header--menu-open");
+        containerMenu.classList.add("header--menu-open");
+      });
+
+      headerClose.addEventListener("click", () => {
+        menuToggle.classList.remove("header--menu-open");
+        containerMenu.classList.remove("header--menu-open");
+      });
+    </script>
   </body>
 </html>
