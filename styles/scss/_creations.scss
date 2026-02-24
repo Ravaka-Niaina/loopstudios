@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 90px;
+  margin-top: $sectionMarginTop;
   padding: 0 $padding;
 }
 
@@ -104,6 +104,7 @@
 
   .creations__heading {
     font-size: $md-h1Size;
+    text-align: center;
   }
 
   .gallery {
@@ -130,6 +131,7 @@
 
   .creations__heading {
     font-size: $xl-h2Size;
+    text-align: left;
   }
 
   .gallery {
