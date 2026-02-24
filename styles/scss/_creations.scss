@@ -81,12 +81,16 @@
 }
 
 @media (min-width: 480px) {
+  // xs
 }
 
 @media (min-width: 640px) {
+  // sm
 }
 
 @media (min-width: 768px) {
+  // md
+
   .creations {
     display: grid;
     justify-content: unset;
@@ -98,4 +102,26 @@
 }
 
 @media (min-width: 1024px) {
+  // lg
+
+  .creations {
+    max-width: $maxContentWidth;
+    margin: $sectionMarginTop auto;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+  }
+
+  .creations__container {
+    margin-left: $xs-padding;
+    margin-right: $xs-padding;
+  }
+
+  .creations__see-all {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    margin-top: 0;
+  }
 }
