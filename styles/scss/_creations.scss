@@ -82,6 +82,11 @@
 
 @media (min-width: 480px) {
   // xs
+
+  .creations {
+    padding-left: $xs-padding;
+    padding-right: $xs-padding;
+  }
 }
 
 @media (min-width: 640px) {
@@ -96,6 +101,11 @@
     justify-content: unset;
     align-items: unset;
   }
+
+  .creations__heading {
+    font-size: $md-h1Size;
+  }
+
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
   }
@@ -118,8 +128,12 @@
     margin-right: $xs-padding;
   }
 
+  .creations__heading {
+    font-size: $xl-h2Size;
+  }
+
   .gallery {
-    margin-top: 55px;
+    margin-top: 45px;
   }
 
   .creations__see-all {

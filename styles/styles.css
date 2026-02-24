@@ -493,21 +493,33 @@
   background-color: black;
 }
 
+@media (min-width: 480px) {
+  /* line 86, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  .creations {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
 @media (min-width: 768px) {
-  /* line 94, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 99, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .creations {
     display: grid;
     justify-content: unset;
     align-items: unset;
   }
-  /* line 99, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 105, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  .creations__heading {
+    font-size: 60px;
+  }
+  /* line 109, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 107, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 117, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .creations {
     max-width: 1120px;
     margin: 180px auto;
@@ -516,16 +528,20 @@
     padding-right: 0;
     position: relative;
   }
-  /* line 116, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 126, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .creations__container {
     margin-left: 48px;
     margin-right: 48px;
   }
-  /* line 121, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
-  .gallery {
-    margin-top: 55px;
+  /* line 131, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  .creations__heading {
+    font-size: 43px;
   }
-  /* line 125, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 135, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  .gallery {
+    margin-top: 45px;
+  }
+  /* line 139, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .creations__see-all {
     position: absolute;
     top: -4px;
