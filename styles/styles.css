@@ -522,6 +522,10 @@
     margin-right: 48px;
   }
   /* line 121, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  .gallery {
+    margin-top: 55px;
+  }
+  /* line 125, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .creations__see-all {
     position: absolute;
     top: -4px;
