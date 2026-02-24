@@ -15,10 +15,12 @@
   display: block;
 }
 
-.header__nav {
+.header__details-container {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
+}
+
+.header__nav {
   padding: $padding;
   display: flex;
   width: 100%;
@@ -127,10 +129,11 @@
 }
 
 .header__title {
-  position: absolute;
-  top: 100px;
+  position: relative;
+  top: 0;
   left: 0;
   margin: $padding;
+  margin-top: 150px;
   padding: $padding;
   color: $white;
   display: inline-block;
@@ -150,6 +153,7 @@
 
 @media (min-width: 480px) {
   // xs
+
   .header__logo {
     width: 230px;
   }
@@ -160,6 +164,7 @@
 
   .header__title {
     margin: $xs-padding;
+    margin-top: 150px;
     padding: $xs-padding;
   }
 }
@@ -175,6 +180,7 @@
   // md
   .header__title {
     font-size: $md-h1Size;
+    margin: $xs-padding;
     max-width: 475px;
   }
 
@@ -187,6 +193,28 @@
 
 @media (min-width: 1024px) {
   // lg
+
+  .header__details-container {
+    margin: $xs-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header__nav {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1112px;
+    position: relative;
+    top: -8px;
+  }
+
+  .header__title-container {
+    width: 100%;
+    max-width: 1112px;
+    margin: 0 auto;
+  }
 
   .header__home-link {
     margin: auto 0;
@@ -219,6 +247,13 @@
 
   .header__close {
     display: none;
+  }
+
+  .header__title {
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    top: 20px;
   }
 
   .container-menu.header--menu-open {

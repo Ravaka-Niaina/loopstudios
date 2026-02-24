@@ -5,6 +5,8 @@ $grey-200: hsl(0, 0%, 85%);
 $padding: 15px;
 $xs-padding: 48px;
 
+$maxContentWidth: 1120px;
+
 $h1Size: 46px;
 $md-h1Size: 60px;
 
@@ -31,4 +33,11 @@ $md-paragraphLineHeight: 50px;
   src: url("../../fonts/JosefinSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
+}
+
+.heading2 {
+  font-family: "JosefinSans";
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: $h2Size;
 }

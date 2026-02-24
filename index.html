@@ -27,49 +27,53 @@
         <img src="images/mobile/image-hero.jpg" alt="VR immersive experience" />
       </picture>
 
-      <nav class="header__nav">
-        <!-- Logo -->
-        <a href="/" class="header__home-link">
-          <img
-            class="header__logo"
-            src="images/logo.svg"
-            alt="logo loopstudios"
-          />
-        </a>
+      <div class="header__details-container">
+        <nav class="header__nav">
+          <!-- Logo -->
+          <a href="/" class="header__home-link">
+            <img
+              class="header__logo"
+              src="images/logo.svg"
+              alt="logo loopstudios"
+            />
+          </a>
 
-        <div></div>
-        <!-- Hamburger Button -->
-        <button
-          class="header__menu-toggle"
-          aria-label="Menu"
-          aria-expanded="false"
-        >
-          <img
-            class="header__hamburger"
-            src="images/icon-hamburger.svg"
-            alt="icon hamburger menu"
-          />
-        </button>
+          <div></div>
+          <!-- Hamburger Button -->
+          <button
+            class="header__menu-toggle"
+            aria-label="Menu"
+            aria-expanded="false"
+          >
+            <img
+              class="header__hamburger"
+              src="images/icon-hamburger.svg"
+              alt="icon hamburger menu"
+            />
+          </button>
 
-        <!-- Menu -->
-        <div class="container-menu">
-          <ul class="header__menu-list">
-            <li class="header__menu-item"><a href="#">About</a></li>
-            <li class="header__menu-item"><a href="#">Careers</a></li>
-            <li class="header__menu-item"><a href="#">Events</a></li>
-            <li class="header__menu-item"><a href="#">Products</a></li>
-            <li class="header__menu-item"><a href="#">Support</a></li>
-          </ul>
+          <!-- Menu -->
+          <div class="container-menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item"><a href="#">About</a></li>
+              <li class="header__menu-item"><a href="#">Careers</a></li>
+              <li class="header__menu-item"><a href="#">Events</a></li>
+              <li class="header__menu-item"><a href="#">Products</a></li>
+              <li class="header__menu-item"><a href="#">Support</a></li>
+            </ul>
 
-          <div class="header__close">
-            <div></div>
-            <div></div>
+            <div class="header__close">
+              <div></div>
+              <div></div>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 
-      <!-- Hero Heading -->
-      <h1 class="header__title">Immersive experiences that deliver</h1>
+        <!-- Hero Heading -->
+        <div class="header__title-container">
+          <h1 class="header__title">Immersive experiences that deliver</h1>
+        </div>
+      </div>
     </header>
 
     <section class="interactive">
@@ -94,6 +98,195 @@
         </p>
       </div>
     </section>
+
+    <section class="creations">
+      <header class="creations__header">
+        <h2 class="creations__heading">Our creations</h2>
+      </header>
+
+      <ul class="gallery">
+        <li class="gallery__item">
+          <a href="#" class="gallery__link">
+            <picture class="gallery__picture">
+              <source
+                srcset="images/desktop/image-deep-earth.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="images/mobile/image-deep-earth.jpg"
+                alt="image deep earth"
+              />
+            </picture>
+            <span class="gallery__name">Deep earth</span>
+          </a>
+        </li>
+
+        <li class="gallery__item">
+          <a href="#" class="gallery__link">
+            <picture class="gallery__picture">
+              <source
+                srcset="images/desktop/image-night-arcade.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="images/mobile/image-night-arcade.jpg"
+                alt="image night arcade"
+              />
+            </picture>
+            <span class="gallery__name">Night arcade</span>
+          </a>
+        </li>
+
+        <li class="gallery__item">
+          <a href="#" class="gallery__link">
+            <picture class="gallery__picture">
+              <source
+                srcset="images/desktop/image-soccer-team.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="images/mobile/image-soccer-team.jpg"
+                alt="image soccer team vr"
+              />
+            </picture>
+            <span class="gallery__name">Soccer team VR</span>
+          </a>
+        </li>
+
+        <li class="gallery__item">
+          <a href="#" class="gallery__link">
+            <picture class="gallery__picture">
+              <source
+                srcset="images/desktop/image-grid.jpg"
+                media="(min-width: 768px)"
+              />
+              <img src="images/mobile/image-grid.jpg" alt="image the grid" />
+            </picture>
+            <span class="gallery__name">The grid</span>
+          </a>
+        </li>
+
+        <li class="gallery__item">
+          <a href="#" class="gallery__link">
+            <picture class="gallery__picture">
+              <source
+                srcset="images/desktop/image-from-above.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="images/mobile/image-from-above.jpg"
+                alt="image from up above vr"
+              />
+            </picture>
+            <span class="gallery__name">From up above VR</span>
+          </a>
+        </li>
+
+        <li class="gallery__item">
+          <a href="#" class="gallery__link">
+            <picture class="gallery__picture">
+              <source
+                srcset="images/desktop/image-pocket-borealis.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="images/mobile/image-pocket-borealis.jpg"
+                alt="image pocket borealis"
+              />
+            </picture>
+            <span class="gallery__name">Pocket borealis</span>
+          </a>
+        </li>
+
+        <li class="gallery__item">
+          <a href="#" class="gallery__link">
+            <picture class="gallery__picture">
+              <source
+                srcset="images/desktop/image-curiosity.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="images/mobile/image-curiosity.jpg"
+                alt="image the curiosity"
+              />
+            </picture>
+            <span class="gallery__name">The curiosity</span>
+          </a>
+        </li>
+
+        <li class="gallery__item">
+          <a href="#" class="gallery__link">
+            <picture class="gallery__picture">
+              <source
+                srcset="images/desktop/image-fisheye.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="images/mobile/image-fisheye.jpg"
+                alt="image make it fisheye"
+              />
+            </picture>
+            <span class="gallery__name">Make it fisheye</span>
+          </a>
+        </li>
+      </ul>
+
+      <button class="creations__see-all">See all</button>
+    </section>
+
+    <footer class="footer">
+      <nav class="footer__nav">
+        <!-- Logo -->
+        <a href="/" class="footer__home-link">
+          <img
+            class="footer__logo"
+            src="images/logo.svg"
+            alt="logo loopstudios"
+          />
+        </a>
+
+        <!-- Footer menu -->
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item"><a href="#">About</a></li>
+          <li class="footer__menu-item"><a href="#">Careers</a></li>
+          <li class="footer__menu-item"><a href="#">Events</a></li>
+          <li class="footer__menu-item"><a href="#">Products</a></li>
+          <li class="footer__menu-item"><a href="#">Support</a></li>
+        </ul>
+
+        <ul class="footer__social-media-links">
+          <li class="footer__media">
+            <a href="#"
+              ><img src="images/icon-facebook.svg" alt="icon facebook"
+            /></a>
+          </li>
+          <li class="footer__media">
+            <a href="#"
+              ><img src="images/icon-twitter.svg" alt="icon twitter"
+            /></a>
+          </li>
+          <li class="footer__media">
+            <a href="#"
+              ><img src="images/icon-pinterest.svg" alt="icon pinterest"
+            /></a>
+          </li>
+          <li class="footer__media">
+            <a href="#"
+              ><img src="images/icon-instagram.svg" alt="icon instagram"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="footer__copyright">© 2021 Loopstudios. All rights reserved.</p>
+    </footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ravaka Niaina Ratefiarivony</a>.
+    </div>
 
     <script>
       const menuToggle = document.querySelector(".header__menu-toggle");

@@ -1,13 +1,13 @@
 @import "common";
 @import "header";
 @import "interactive";
+@import "creations";
 
 $bg-color: $white;
 
 body {
   background-color: $bg-color;
   margin: 0;
-  min-height: 100px;
   width: 100vw;
   box-sizing: border-box;
 }

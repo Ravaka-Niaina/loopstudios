@@ -16,10 +16,7 @@
 }
 
 .interactive__heading {
-  font-family: "JosefinSans";
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: $h2Size;
+  @extend .heading2;
 }
 
 .interactive__paragraph {
@@ -33,6 +30,7 @@
 }
 
 @media (min-width: 480px) {
+  // xs
   .interactive {
     margin-top: 150px;
     padding: 0 $xs-padding;
@@ -41,15 +39,17 @@
   .interactive__paragraph {
     padding-left: $xs-padding;
     padding-right: $xs-padding;
-    font-size: $xs-fontSize;
+    // font-size: $xs-fontSize;
     line-height: $xs-paragraphLineHeight;
   }
 }
 
 @media (min-width: 640px) {
+  // xs
 }
 
 @media (min-width: 768px) {
+  // md
   .interactive__heading {
     font-size: $md-h2Size;
   }

@@ -12,6 +12,14 @@
   font-style: normal;
 }
 
+/* line 38, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_common.scss */
+.heading2, .interactive__heading, .creations__heading {
+  font-family: "JosefinSans";
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
 /* line 1, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header {
   position: relative;
@@ -28,10 +36,13 @@
 }
 
 /* line 18, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
-.header__nav {
+.header__details-container {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
+}
+
+/* line 23, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+.header__nav {
   padding: 15px;
   display: flex;
   width: 100%;
@@ -39,17 +50,17 @@
   justify-content: space-between;
 }
 
-/* line 29, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 31, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header__home-link {
   display: inline-block;
 }
 
-/* line 33, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 35, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header__logo {
   width: 150px;
 }
 
-/* line 37, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 39, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header__menu-toggle {
   background: transparent;
   border: none;
@@ -57,18 +68,18 @@
   cursor: pointer;
 }
 
-/* line 44, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 46, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header__menu-toggle.header--menu-open {
   display: none;
 }
 
-/* line 48, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 50, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header__hamburger {
   width: 45px;
   display: block;
 }
 
-/* line 53, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 55, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header__close {
   width: 45px;
   height: 30px;
@@ -77,14 +88,14 @@
   display: none;
 }
 
-/* line 61, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 63, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header__close div {
   width: 52px;
   height: 4px;
   background-color: black;
 }
 
-/* line 67, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 69, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header__close > div:first-child {
   transform: rotate(31deg);
   position: relative;
@@ -92,7 +103,7 @@
   left: -4px;
 }
 
-/* line 74, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 76, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header__close > div:last-child {
   transform: rotate(-31deg);
   position: relative;
@@ -100,7 +111,7 @@
   left: -4px;
 }
 
-/* line 81, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 83, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .container-menu {
   display: none;
   grid-auto-flow: column;
@@ -111,7 +122,7 @@
   z-index: 10;
 }
 
-/* line 91, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 93, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header__menu-list {
   display: none;
   gap: 20px;
@@ -120,7 +131,7 @@
   padding-left: 0;
 }
 
-/* line 100, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 102, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header__menu-item > a {
   text-decoration: none;
   color: black;
@@ -133,33 +144,34 @@
   transition: border-color 0.25s ease;
 }
 
-/* line 112, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 114, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header__menu-item > a:hover {
   border-bottom-color: black;
 }
 
-/* line 116, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 118, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .container-menu.header--menu-open {
   display: grid;
   left: 15px;
 }
 
-/* line 120, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 122, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .container-menu.header--menu-open .header__menu-list {
   display: grid;
 }
 
-/* line 124, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 126, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .container-menu.header--menu-open .header__close {
   display: flex;
 }
 
-/* line 129, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+/* line 131, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
 .header__title {
-  position: absolute;
-  top: 100px;
+  position: relative;
+  top: 0;
   left: 0;
   margin: 15px;
+  margin-top: 150px;
   padding: 15px;
   color: white;
   display: inline-block;
@@ -172,42 +184,44 @@
 }
 
 @media (min-width: 360px) {
-  /* line 146, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 149, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__title {
     word-break: normal;
   }
 }
 
 @media (min-width: 480px) {
-  /* line 153, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 157, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__logo {
     width: 230px;
   }
-  /* line 157, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 161, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__nav {
     padding: 48px;
   }
-  /* line 161, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 165, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__title {
     margin: 48px;
+    margin-top: 150px;
     padding: 48px;
   }
 }
 
 @media (min-width: 640px) {
-  /* line 169, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 174, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__logo {
     width: 200px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 176, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 181, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__title {
     font-size: 60px;
+    margin: 48px;
     max-width: 475px;
   }
-  /* line 181, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 187, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__hero > img {
     height: 550px;
     width: 100%;
@@ -216,41 +230,70 @@
 }
 
 @media (min-width: 1024px) {
-  /* line 191, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 197, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  .header__details-container {
+    margin: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* line 204, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  .header__nav {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1112px;
+    position: relative;
+    top: -8px;
+  }
+  /* line 213, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  .header__title-container {
+    width: 100%;
+    max-width: 1112px;
+    margin: 0 auto;
+  }
+  /* line 219, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__home-link {
     margin: auto 0;
   }
-  /* line 194, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 222, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__hamburger {
     display: none;
   }
-  /* line 198, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 226, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .container-menu {
     background-color: transparent;
     padding: 0;
     top: 0;
     display: grid;
   }
-  /* line 205, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 233, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__menu-list {
     display: grid;
     grid-auto-flow: column;
     gap: 30px;
     margin: auto 0;
   }
-  /* line 212, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 240, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__menu-item > a {
     color: white;
   }
-  /* line 216, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 244, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__menu-item > a:hover {
     border-bottom-color: white;
   }
-  /* line 220, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 248, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__close {
     display: none;
   }
-  /* line 225, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 252, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  .header__title {
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    top: 20px;
+  }
+  /* line 260, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .container-menu.header--menu-open .header__close {
     display: none;
   }
@@ -276,15 +319,7 @@
   text-align: center;
 }
 
-/* line 18, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
-.interactive__heading {
-  font-family: "JosefinSans";
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 30px;
-}
-
-/* line 25, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+/* line 22, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
 .interactive__paragraph {
   font-family: "Alata";
   font-weight: 400;
@@ -296,16 +331,15 @@
 }
 
 @media (min-width: 480px) {
-  /* line 36, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+  /* line 34, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
   .interactive {
     margin-top: 150px;
     padding: 0 48px;
   }
-  /* line 41, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+  /* line 39, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
   .interactive__paragraph {
     padding-left: 48px;
     padding-right: 48px;
-    font-size: 23px;
     line-height: 40px;
   }
 }
@@ -323,11 +357,108 @@
   }
 }
 
-/* line 7, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/styles.scss */
+/* line 1, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+.creations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  padding: 0 15px;
+}
+
+/* line 10, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+.creations__heading {
+  margin-top: 0;
+}
+
+/* line 15, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+.gallery {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 17px;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+}
+
+/* line 23, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+.gallery__link {
+  position: relative;
+  display: block;
+}
+
+/* line 28, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+.gallery__picture {
+  text-decoration: none;
+  position: relative;
+  display: block;
+}
+
+/* Overlay */
+/* line 35, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+.gallery__picture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.15));
+  pointer-events: none;
+}
+
+/* line 49, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+.gallery__picture > img {
+  width: 100%;
+  display: block;
+}
+
+/* line 54, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+.gallery__name {
+  position: absolute;
+  color: white;
+  font-family: "JosefinSans";
+  text-transform: uppercase;
+  font-size: 25px;
+  width: 140px;
+  bottom: 30px;
+  left: 15px;
+}
+
+/* line 65, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+.creations__see-all {
+  background-color: white;
+  font-family: "Alata";
+  text-transform: uppercase;
+  padding: 10px 40px;
+  letter-spacing: 3px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  margin-top: 20px;
+}
+
+/* line 78, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+.creations__see-all:hover {
+  color: white;
+  background-color: black;
+}
+
+@media (min-width: 768px) {
+  /* line 90, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  .creations {
+    display: grid;
+    justify-content: unset;
+    align-items: unset;
+  }
+  /* line 95, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  }
+}
+
+/* line 8, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/styles.scss */
 body {
   background-color: white;
   margin: 0;
-  min-height: 100px;
   width: 100vw;
   box-sizing: border-box;
 }
