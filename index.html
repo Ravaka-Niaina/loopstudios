@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
+    <!-- modifier = header--menu-open -->
     <header class="header">
       <!-- Hero Image -->
       <picture class="header__hero">
@@ -38,7 +39,6 @@
             />
           </a>
 
-          <div></div>
           <!-- Hamburger Button -->
           <button
             class="header__menu-toggle"
@@ -50,6 +50,11 @@
               src="images/icon-hamburger.svg"
               alt="icon hamburger menu"
             />
+
+            <div class="header__close">
+              <div></div>
+              <div></div>
+            </div>
           </button>
 
           <!-- Menu -->
@@ -61,11 +66,6 @@
               <li class="header__menu-item"><a href="#">Products</a></li>
               <li class="header__menu-item"><a href="#">Support</a></li>
             </ul>
-
-            <div class="header__close">
-              <div></div>
-              <div></div>
-            </div>
           </div>
         </nav>
 
@@ -76,28 +76,6 @@
       </div>
     </header>
 
-    <section class="interactive">
-      <picture class="interactive__picture">
-        <source
-          srcset="images/desktop/image-interactive.jpg"
-          media="(min-width: 768px)"
-        />
-        <img
-          src="images/mobile/image-interactive.jpg"
-          alt="man using vr googles"
-        />
-      </picture>
-
-      <div class="interactive__details">
-        <h2 class="interactive__heading">The leader in interactive VR</h2>
-        <p class="interactive__paragraph">
-          Founded in 2011, Loopstudios has been producing world-class virtual
-          reality projects for some of the best companies around the globe. Our
-          award-winning creations have transformed businesses through digital
-          experiences that bind to their brand.
-        </p>
-      </div>
-    </section>
     <section class="creations__container">
       <div class="creations">
         <header class="creations__header">
@@ -294,18 +272,16 @@
     </div>
 
     <script>
-      const menuToggle = document.querySelector(".header__menu-toggle");
-      const containerMenu = document.querySelector(".container-menu");
+      const header = document.querySelector(".header");
+      const hamburger = document.querySelector(".header__hamburger");
       const headerClose = document.querySelector(".header__close");
 
-      menuToggle.addEventListener("click", () => {
-        menuToggle.classList.add("header--menu-open");
-        containerMenu.classList.add("header--menu-open");
+      hamburger.addEventListener("click", () => {
+        header.classList.add("header--menu-open");
       });
 
       headerClose.addEventListener("click", () => {
-        menuToggle.classList.remove("header--menu-open");
-        containerMenu.classList.remove("header--menu-open");
+        header.classList.remove("header--menu-open");
       });
     </script>
   </body>
