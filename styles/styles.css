@@ -12,7 +12,7 @@
   font-style: normal;
 }
 
-/* line 38, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_common.scss */
+/* line 40, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_common.scss */
 .heading2, .interactive__heading, .creations__heading {
   font-family: "JosefinSans";
   font-weight: 300;
@@ -249,7 +249,7 @@
   /* line 213, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__title-container {
     width: 100%;
-    max-width: 1112px;
+    max-width: 1120px;
     margin: 0 auto;
   }
   /* line 219, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
@@ -354,6 +354,57 @@
     margin-top: 0;
     font-size: 32px;
     line-height: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 66, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+  .interactive {
+    padding: 0;
+    padding: 0 48px;
+    margin: 0 auto;
+    margin-top: 180px;
+    width: 100%;
+    max-width: 1120px;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* line 79, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+  .interactive {
+    display: flex;
+    padding: 0;
+    position: relative;
+  }
+  /* line 85, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+  .interactive__picture > img {
+    width: 748px;
+  }
+  /* line 89, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+  .interactive__details {
+    width: 564px;
+    padding-left: 48px;
+    padding-right: 0;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    text-align: left;
+  }
+  /* line 101, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+  .interactive__heading {
+    font-size: 43px;
+    padding-left: 48px;
+    padding-right: 0;
+    padding-right: 0;
+    margin-top: calc(2 * 48px);
+  }
+  /* line 109, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_interactive.scss */
+  .interactive__paragraph {
+    padding-right: 0;
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 
