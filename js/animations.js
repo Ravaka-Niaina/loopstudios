@@ -105,7 +105,7 @@ footerMenuList.forEach((item, index) => {
       opacity: 0,
       scrollTrigger: {
         trigger: item,
-        start: "top 80%",
+        start: "top bottom",
         markers: true,
         toggleActions: "restart none none reset",
       },
