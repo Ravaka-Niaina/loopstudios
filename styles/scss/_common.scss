@@ -24,16 +24,18 @@ $paragraphLineHeight: 30px;
 $xs-paragraphLineHeight: 40px;
 $md-paragraphLineHeight: 50px;
 
+$font-path: "../fonts/";
+
 @font-face {
   font-family: "Alata";
-  src: url("/fonts/Alata-Regular.ttf") format("truetype");
+  src: url("#{$font-path}Alata-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "JosefinSans";
-  src: url("/fonts/JosefinSans-Light.ttf") format("truetype");
+  src: url("#{$font-path}JosefinSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
