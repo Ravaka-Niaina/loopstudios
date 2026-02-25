@@ -106,7 +106,6 @@ footerMenuList.forEach((item, index) => {
       scrollTrigger: {
         trigger: item,
         start: "top bottom",
-        markers: true,
         toggleActions: "restart none none reset",
       },
     })
@@ -122,7 +121,7 @@ footerMediaList.forEach((item, index) => {
       opacity: 0,
       scrollTrigger: {
         trigger: item,
-        start: "top 80%",
+        start: "top bottom",
         toggleActions: "restart none none reset",
       },
     })
@@ -136,7 +135,7 @@ gsap.from(copyright, {
   opacity: 0,
   scrollTrigger: {
     trigger: copyright,
-    start: "top 80%",
+    start: "top bottom",
     toggleActions: "restart none none reset",
   },
 });
