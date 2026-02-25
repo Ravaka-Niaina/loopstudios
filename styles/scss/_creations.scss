@@ -51,6 +51,23 @@
   display: block;
 }
 
+.gallery__picture::before {
+  content: "";
+  background: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.gallery__link:hover {
+  .gallery__picture::before {
+    opacity: 0.7;
+  }
+  .gallery__name {
+    color: $black;
+  }
+}
+
 .gallery__name {
   position: absolute;
   color: $white;

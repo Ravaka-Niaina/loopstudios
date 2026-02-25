@@ -473,6 +473,25 @@
 }
 
 /* line 54, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+.gallery__picture::before {
+  content: "";
+  background: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+/* line 63, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+.gallery__link:hover .gallery__picture::before {
+  opacity: 0.7;
+}
+
+/* line 66, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+.gallery__link:hover .gallery__name {
+  color: black;
+}
+
+/* line 71, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
 .gallery__name {
   position: absolute;
   color: white;
@@ -484,7 +503,7 @@
   left: 15px;
 }
 
-/* line 65, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+/* line 82, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
 .creations__see-all {
   background-color: white;
   font-family: "Alata";
@@ -498,14 +517,14 @@
   margin-top: 20px;
 }
 
-/* line 78, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+/* line 95, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
 .creations__see-all:hover {
   color: white;
   background-color: black;
 }
 
 @media (min-width: 480px) {
-  /* line 86, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 103, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .creations {
     padding-left: 48px;
     padding-right: 48px;
@@ -513,25 +532,25 @@
 }
 
 @media (min-width: 768px) {
-  /* line 99, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 116, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .creations {
     display: grid;
     justify-content: unset;
     align-items: unset;
   }
-  /* line 105, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 122, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .creations__heading {
     font-size: 60px;
     text-align: center;
   }
-  /* line 110, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 127, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 118, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 135, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .creations {
     max-width: 1120px;
     margin: 180px auto;
@@ -540,21 +559,21 @@
     padding-right: 0;
     position: relative;
   }
-  /* line 127, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 144, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .creations__container {
     margin-left: 48px;
     margin-right: 48px;
   }
-  /* line 132, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 149, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .creations__heading {
     font-size: 43px;
     text-align: left;
   }
-  /* line 137, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 154, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .gallery {
     margin-top: 45px;
   }
-  /* line 141, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
+  /* line 158, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_creations.scss */
   .creations__see-all {
     position: absolute;
     top: -4px;
