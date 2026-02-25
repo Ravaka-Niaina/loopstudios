@@ -96,21 +96,22 @@ gsap.from(footerLogo, {
   ease: "power3.out",
 });
 
-// const footerMenuList = document.querySelectorAll(".footer__menu-item");
-// footerMenuList.forEach((item, index) => {
-//   gsap
-//     .from(item, {
-//       duration: 1.5,
-//       x: -500,
-//       opacity: 0,
-//       scrollTrigger: {
-//         trigger: item,
-//         start: "top 80%",
-//         toggleActions: "restart none none reset",
-//       },
-//     })
-//     .delay(0.05 * footerMenuList.length - 0.05 * index);
-// });
+const footerMenuList = document.querySelectorAll(".footer__menu-item");
+footerMenuList.forEach((item, index) => {
+  gsap
+    .from(item, {
+      duration: 1.5,
+      x: -500,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: item,
+        start: "top 80%",
+        markers: true,
+        toggleActions: "restart none none reset",
+      },
+    })
+    .delay(0.05 * footerMenuList.length - 0.05 * index);
+});
 
 const footerMediaList = document.querySelectorAll(".footer__media");
 footerMediaList.forEach((item, index) => {
