@@ -240,7 +240,7 @@
 }
 
 @media (min-width: 768px) {
-  /* line 209, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 210, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__title {
     font-size: 60px;
     margin: 48px;
@@ -250,7 +250,7 @@
     position: relative;
     top: 25px;
   }
-  /* line 219, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 220, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__hero > img {
     height: 550px;
     width: 100%;
@@ -259,26 +259,26 @@
 }
 
 @media (min-width: 1024px) {
-  /* line 229, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 230, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__details-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px 1fr;
     width: 1120px;
-    max-width: 100%;
+    max-width: calc(100% - 2 * 48px);
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 239, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 240, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__hamburger {
     display: none;
   }
-  /* line 243, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 244, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .container-menu {
     display: flex;
     margin-left: auto;
   }
-  /* line 248, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 249, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__menu-list {
     list-style: none;
     display: flex;
@@ -286,11 +286,11 @@
     margin: 0;
     padding: 0;
   }
-  /* line 256, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 257, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__menu-item {
     margin-top: auto;
   }
-  /* line 260, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 261, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__menu-item a {
     color: white;
     text-decoration: none;
@@ -304,7 +304,7 @@
     top: 7px;
     transition: border-color 0.25s ease;
   }
-  /* line 275, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
+  /* line 276, ../Users/Norck/Documents/projects/loopstudios-landing-page-main/styles/scss/_header.scss */
   .header__menu-item a:hover {
     border-color: white;
   }
