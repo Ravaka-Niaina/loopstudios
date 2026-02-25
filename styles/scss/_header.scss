@@ -217,6 +217,20 @@
     top: 25px;
   }
 
+  .header__hero {
+    position: relative;
+    display: block;
+  }
+
+  /* Overlay */
+  .header__hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.26);
+  }
+
   .header__hero > img {
     height: 550px;
     width: 100%;
